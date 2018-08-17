@@ -54,6 +54,12 @@ $ sudo ip link set wlo1 up
 	$ rfkill unblock all
 )
 
+$ sudo iw dev wlp13s0 scan
+
+To make the settings permanent,type below command in terminal and press enter.
+
+$ echo "options rtl8723be ant_sel=2" | sudo tee /etc/modprobe.d/50-  rtl8723be.conf
+
 
 
 
