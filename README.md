@@ -42,5 +42,18 @@ cd Desktop
 cd rtlwifi_new-master
 make
 sudo make install
+sudo modprobe -rv rtl8723be
+sudo modprobe -v rtl8723be ant_sel=2
+sudo ip link set wlo1 up
+
+(#up there inplace of wlo1 enter your device name, you got from running iwconfig)
+
+echo "blacklist hp_wmi" > /etc/modprobe.d/hp.conf
+(# run above command as root)
+(# if you get an error of Permission denied,  perform following
+	sudo su
+	(Enter the password and run the command again)
+
+)
 
 
