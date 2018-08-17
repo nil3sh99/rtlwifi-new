@@ -60,6 +60,10 @@ To make the settings permanent,type below command in terminal and press enter.
 
 $ echo "options rtl8723be ant_sel=2" | sudo tee /etc/modprobe.d/50-  rtl8723be.conf
 
+If everything goes fine, then turn on your wifi, and enjoy. ;)
+
+Thanks to lwfinger. :)
+
 
 
 
