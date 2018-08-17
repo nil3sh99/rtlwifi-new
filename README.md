@@ -28,17 +28,6 @@ If you are running Ubuntu, then
 Please note the first paragraph above.
 
 For all distros:
-git clone https://github.com/lwfinger/rtlwifi_new.git
-cd rtlwifi_new
-sudo make install
-sudo modprobe -r <<YOUR WIRELESS DRIVER CODE>>
-sudo modprobe <<YOUR WIRELESS DRIVER CODE>>
 
-#### Option configuration
-If it turns out that your system needs one of the configuration options, then do the following:
-
-vim /etc/modprobe.d/<<YOUR WIRELESS DRIVER CODE>>.conf 
-
-There, enter the line below:
-`options <<YOUR WIRELESS DRIVER CODE>> <<driver_option_name>>=<value>`
+git clone git@github.com:NAAG1999/ubuntu_wifi-bug-hp-.git
 
