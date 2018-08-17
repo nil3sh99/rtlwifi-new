@@ -36,7 +36,7 @@ $ iwconfig
 				OR
 ($ cd Desktop
  $ mkdir <<folder name>>
- $ git clone git@github.com:NAAG1999/ubuntu_wifi-bug-hp-.git )
+ $ git clone git@github.com:NAAG1999/rtlwifi-new.git )
 
 $ cd Desktop
 $ cd rtlwifi_new-master
