@@ -29,31 +29,31 @@ Please note the first paragraph above.
 
 Fire up the terminal and run the following commands:-
 
-iwconfig
+$ iwconfig
 (#this will be used later on for setting up the wlan port)
 (#check for the device name for IEEE 802.11bgn)
 (#Download the zip file of this repository and extract it on desktop)
 				OR
-(cd Desktop
- mkdir <<folder name>>
- git clone git@github.com:NAAG1999/ubuntu_wifi-bug-hp-.git )
+($ cd Desktop
+ $ mkdir <<folder name>>
+ $ git clone git@github.com:NAAG1999/ubuntu_wifi-bug-hp-.git )
 
-cd Desktop
-cd rtlwifi_new-master
-make
-sudo make install
-sudo modprobe -rv rtl8723be
-sudo modprobe -v rtl8723be ant_sel=2
-sudo ip link set wlo1 up
+$ cd Desktop
+$ cd rtlwifi_new-master
+$ make
+$ sudo make install
+$ sudo modprobe -rv rtl8723be
+$ sudo modprobe -v rtl8723be ant_sel=2
+$ sudo ip link set wlo1 up
 
 (#up there inplace of wlo1 enter your device name, you got from running iwconfig)
-
-echo "blacklist hp_wmi" > /etc/modprobe.d/hp.conf
-(# run above command as root)
-(# if you get an error of Permission denied,  perform following
-	sudo su
-	(Enter the password and run the command again)
-
+(# if you get an error of permission denied then do the following steps:-)
+	$ sudo su
+	(Enter the password)
+	$ echo "blacklist hp_wmi" > /etc/modprobe.d/hp.conf
+	$ rfkill unblock all
 )
+
+
 
 
