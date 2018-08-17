@@ -27,7 +27,13 @@ If you are running Ubuntu, then
 
 Please note the first paragraph above.
 
-For all distros:
+Fire up the terminal and run the following commands:-
+
+iwconfig
+(#this will be used later on for setting up the wlan port)
+(#check for the device name for IEEE 802.11bgn)
+
+(#Download the zip file of this repository and extract it on desktop)
 
 git clone git@github.com:NAAG1999/ubuntu_wifi-bug-hp-.git
 
